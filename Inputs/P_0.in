@@ -1,0 +1,44 @@
+ &control
+    calculation = 'scf'
+    restart_mode='from_scratch',
+    prefix='P_paw',
+    pseudo_dir = './'
+ /
+ &system
+    ibrav   = 0, 
+    nat     = 8, 
+    ntyp    = 1,
+    ecutwfc = 70,
+    ecutrho = 400
+ /
+ &electrons
+    diagonalization='david'
+    mixing_mode = 'plain'
+    mixing_beta = 0.7
+    conv_thr =  1.0d-9
+    electron_maxstep = 100
+ /
+
+ATOMIC_SPECIES
+ P   26.00   P.pbe-n-kjpaw_psl.0.1.UPF
+
+K_POINTS (automatic)
+ 1 1 1 0 0 0 
+
+CELL_PARAMETERS (angstrom)
+        3.3099999428         0.0000000000         0.0000000000
+        0.0000000000         4.3800001144         0.0000000000
+        0.0000000000         0.0000000000        10.5000000000
+
+ATOMIC_POSITIONS (angstrom)
+P  0.000000000         0.394200026         1.028999973
+P  0.000000000         3.985799958         9.471000105
+P  0.000000000         2.584200214         4.221000105
+P  0.000000000         1.795800031         6.278999895
+P  1.654999971         0.394200026         6.278999895
+P  1.654999971         3.985799958         4.221000105
+P  1.654999971         2.584200214         9.471000105
+P  1.654999971         1.795800031         1.028999973
+
+
+
