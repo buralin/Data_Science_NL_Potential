@@ -1,0 +1,352 @@
+     Reading input from Al_0.in
+Warning: card  !AL   26.00   AL.PZ-HGH.UPF ignored
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  3
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+
+   Info: using nr1, nr2, nr3 values from input
+     Found symmetry operation: I + (  0.0000  0.0000 -0.5000)
+     This is a supercell, fractional translations are disabled
+
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         217     217     63                 5917     5917     949
+     Max         218     218     65                 5922     5922     950
+     Sum        1305    1305    385                35513    35513    5695
+
+
+     Parallelization info Large
+     --------------------
+     sticks:   dense     G-vecs:    dense
+     Min         217                 5917
+     Max         218                 5922
+     Sum        1305                35513
+
+ ref_atm           1
+   0.0000000000000000        0.0000000000000000       0.49999999999999989     
+         -22         -22         -33
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =       7.6458  a.u.
+     unit-cell volume          =     446.9657 (a.u.)^3
+     number of atoms/cell      =            2
+     number of atomic types    =            1
+
+
+     Large bravais-lattice index     =            0
+     Large lattice parameter (alat)  =       7.6458  a.u.
+     Large unit-cell volume          =     446.9657 (a.u.)^3
+     number of electrons       =         6.00
+     number of Kohn-Sham states=            7
+     kinetic-energy cutoff     =      70.0000  Ry
+     charge density cutoff     =     280.0000  Ry
+     convergence threshold     =      1.0E-09
+     mixing beta               =       0.7000
+     number of iterations used =            8  plain     mixing
+     Exchange-correlation      = PZ ( 1  1  0  0 0)
+
+     ===== FROZEN DENSITY EMBEDDING METHOD ======================
+     Number of fragments  :   1
+     Total number of atoms:   2
+     Current fragment     :   1
+     Initial FDE Density  : Atomic
+     Kinetic energy funct.: LC94      
+     Fragment Charge      :  0.00
+     Total    Charge      :  0.00
+     Fragment Spin        : Closed Shell
+     Total    Spin        : Closed Shell
+     Fragment #   1:
+         1           Al  tau(   1) = (   0.0000000   0.0000000   0.0000000  )
+         2           Al  tau(   2) = (   0.0000000   0.0000000   0.5000000  )
+     ===== FROZEN DENSITY EMBEDDING METHOD ======================
+
+
+     celldm(1)=   7.645832  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   1.000000   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.000000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  1.000000  0.000000 )  
+               b(3) = (  0.000000  0.000000  1.000000 )  
+
+     Large crystal axes: (cart. coord. in units of alat)
+               a(1) = (   1.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000   1.000000   0.000000 )  
+               a(3) = (   0.000000   0.000000   1.000000 )  
+
+     Large reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  1.000000  0.000000  0.000000 )  
+               b(2) = (  0.000000  1.000000  0.000000 )  
+               b(3) = (  0.000000  0.000000  1.000000 )  
+
+
+     PseudoPot. # 1 for Al read from file:
+     ./Al_local.UPF
+     MD5 check sum: 461811187c9571c8e7866b75b16ce397
+     Pseudo is Norm-conserving, Zval =  3.0
+     Generated using FHI98PP, converted with fhi2upf.x v.5.0.2
+     Using radial grid of  493 points,  1 beta functions with: 
+                l(1) =   1
+
+     atomic species   valence    mass     pseudopotential
+        Al             3.00    26.00000     Al( 1.00)
+
+     No symmetry found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           Al  tau(   1) = (   0.0000000   0.0000000   0.0000000  )
+         2           Al  tau(   2) = (   0.0000000   0.0000000   0.5000000  )
+
+     number of k points=   260  gaussian smearing, width (Ry)=  0.0100
+
+     Number of k-points >= 100: set verbosity='high' to print them.
+
+     Dense  grid:    35513 G-vectors     FFT dimensions: (  45,  45,  45)
+
+     Large  grid:    35513 G-vectors     FFT dimensions: (  45,  45,  45)
+
+     Largest allocated arrays     est. size (Mb)     dimensions
+        Kohn-Sham Wavefunctions         0.08 Mb     (     756,    7)
+        NL pseudopotentials             0.07 Mb     (     756,    6)
+        Each V/rho on FFT grid          0.25 Mb     (   16200)
+        Each V/rho on Large FFT grid       0.25 Mb     (   16200)
+        Each G-vector array             0.05 Mb     (    5922)
+        G-vector shells                 0.00 Mb     (     344)
+        Each G-vector array (Large)       0.05 Mb     (    5922)
+        G-vector shells (Large)           0.00 Mb     (     344)
+     Largest temporary arrays     est. size (Mb)     dimensions
+        Auxiliary wavefunctions         0.32 Mb     (     756,   28)
+        Each subspace H/S matrix        0.01 Mb     (      28,   28)
+        Each <psi_i|beta_j> matrix      0.00 Mb     (       6,    7)
+        Arrays for rho mixing           1.98 Mb     (   16200,    8)
+
+     Initial potential from superposition of free atoms
+
+     starting charge    5.99612, renormalised to    6.00000
+     Starting wfc are    8 randomized atomic wfcs
+
+     total cpu time spent up to now is        2.3 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    70.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-02,  avg # of iterations =  4.3
+
+     total cpu time spent up to now is       10.5 secs
+
+     max. frag. est. scf acc.  =       0.07154732 Ry
+
+     frag. estimated scf acc.  <       0.07154732 Ry
+     total Hartree energy      =       0.89309911
+
+     iteration #  2     ecut=    70.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  1.19E-03,  avg # of iterations =  1.1
+
+     total cpu time spent up to now is       13.9 secs
+
+     max. frag. est. scf acc.  =       0.04911310 Ry
+
+     frag. estimated scf acc.  <       0.04911310 Ry
+     total Hartree energy      =       1.15411442
+
+     iteration #  3     ecut=    70.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  8.19E-04,  avg # of iterations =  2.3
+
+     total cpu time spent up to now is       19.1 secs
+
+     max. frag. est. scf acc.  =       0.00190422 Ry
+
+     frag. estimated scf acc.  <       0.00190422 Ry
+     total Hartree energy      =       1.11637563
+
+     iteration #  4     ecut=    70.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  3.17E-05,  avg # of iterations =  3.8
+
+     total cpu time spent up to now is       26.8 secs
+
+     max. frag. est. scf acc.  =       0.00073519 Ry
+
+     frag. estimated scf acc.  <       0.00073519 Ry
+     total Hartree energy      =       1.10721812
+
+     iteration #  5     ecut=    70.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  1.23E-05,  avg # of iterations =  1.2
+
+     total cpu time spent up to now is       30.6 secs
+
+     max. frag. est. scf acc.  =       0.00002241 Ry
+
+     frag. estimated scf acc.  <       0.00002241 Ry
+     total Hartree energy      =       1.10310715
+
+     iteration #  6     ecut=    70.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  3.74E-07,  avg # of iterations =  2.4
+
+     total cpu time spent up to now is       35.3 secs
+
+     max. frag. est. scf acc.  =       0.00000143 Ry
+
+     frag. estimated scf acc.  <       0.00000143 Ry
+     total Hartree energy      =       1.10384412
+
+     iteration #  7     ecut=    70.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  2.39E-08,  avg # of iterations =  1.1
+
+     total cpu time spent up to now is       38.7 secs
+
+     max. frag. est. scf acc.  =       0.00000256 Ry
+
+     frag. estimated scf acc.  <       0.00000256 Ry
+     total Hartree energy      =       1.10337253
+
+     iteration #  8     ecut=    70.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  2.39E-08,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is       42.1 secs
+
+     max. frag. est. scf acc.  =       0.00000150 Ry
+
+     frag. estimated scf acc.  <       0.00000150 Ry
+     total Hartree energy      =       1.10326749
+
+     iteration #  9     ecut=    70.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  2.39E-08,  avg # of iterations =  1.0
+
+     total cpu time spent up to now is       45.3 secs
+
+     max. frag. est. scf acc.  =       0.00000126 Ry
+
+     frag. estimated scf acc.  <       0.00000126 Ry
+     total Hartree energy      =       1.10307301
+
+     iteration # 10     ecut=    70.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  2.10E-08,  avg # of iterations =  1.1
+
+     total cpu time spent up to now is       48.7 secs
+
+     max. frag. est. scf acc.  =       0.00000087 Ry
+
+     frag. estimated scf acc.  <       0.00000087 Ry
+     total Hartree energy      =       1.10215994
+
+     iteration # 11     ecut=    70.00 Ry     beta=0.70
+     Davidson diagonalization with overlap
+     ethr =  1.46E-08,  avg # of iterations =  1.8
+
+     total cpu time spent up to now is       53.0 secs
+
+     End of self-consistent calculation
+
+     Number of k-points >= 100: set verbosity='high' to print the bands.
+
+     the Fermi energy is     1.6682 ev
+
+     max. frag. est. scf acc.  =          0.5E-09 Ry
+
+     frag. estimated scf acc.  <          0.5E-09 Ry
+
+     The total energy is the sum of the following terms:
+
+     one-electron contribution =       0.81926736 Ry
+     hartree contribution      =       1.10214464 Ry
+     xc contribution           =      -2.99168335 Ry
+     ewald contribution        =      -6.90547956 Ry
+
+     FDE: sum of frag energies =      -7.97650955 Ry
+     FDE: ewald double counting=       0.00000000 Ry
+     FDE: non additive kinetic =       0.00000000 Ry
+     FDE: non additive E_XC    =       0.00000000 Ry
+     FDE: total energy         =      -7.97650955 Ry
+     smearing contrib. (-TS)   =      -0.00075864 Ry
+
+     convergence has been achieved in  11 iterations
+
+     Writing output data file Al.save
+     Writing data to file  Al_fde_rho.pp
+ before rewinding file
+ vloc_vxc_ vh_  vt_  
+     Writing data to file  Al_vloc_rho0.pp
+ before rewinding file
+     Writing data to file  Al_vloc_rhotot.pp
+ before rewinding file
+     Writing data to file  Al_vxc_rho0_alph.pp
+ before rewinding file
+     Writing data to file  Al_vxc_rhotot_alph.pp
+ before rewinding file
+     Writing data to file  Al_vh_rho0_alph.pp
+ before rewinding file
+     Writing data to file  Al_vh_rhotot_alph.pp
+ before rewinding file
+     Writing data to file  Al_vt_rho0_alph.pp
+ before rewinding file
+     Writing data to file  Al_vt_rhotot_alph.pp
+ before rewinding file
+
+     init_run     :      3.30s CPU      2.28s WALL (       1 calls)
+     electrons    :     95.58s CPU     50.71s WALL (       1 calls)
+
+     Called by init_run:
+     wfcinit      :      3.19s CPU      2.15s WALL (       1 calls)
+     potinit      :      0.04s CPU      0.05s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :     88.51s CPU     43.52s WALL (      11 calls)
+     sum_band     :      6.64s CPU      6.78s WALL (      11 calls)
+     v_of_rho     :      0.32s CPU      0.36s WALL (      12 calls)
+     mix_rho      :      0.11s CPU      0.05s WALL (      11 calls)
+
+     Called by c_bands:
+     init_us_2    :      2.09s CPU      0.73s WALL (    5980 calls)
+     cegterg      :     85.43s CPU     42.21s WALL (    2860 calls)
+
+     Called by *egterg:
+     h_psi        :     70.56s CPU     37.54s WALL (    8606 calls)
+     g_psi        :      0.46s CPU      0.16s WALL (    5486 calls)
+     cdiaghg      :      9.87s CPU      2.84s WALL (    8346 calls)
+
+     Called by h_psi:
+     add_vuspsi   :      0.32s CPU      0.32s WALL (    8606 calls)
+
+     General routines
+     calbec       :     12.43s CPU      4.96s WALL (    8606 calls)
+     fft          :      0.08s CPU      0.08s WALL (     140 calls)
+     fftw         :     61.09s CPU     36.00s WALL (  114526 calls)
+     davcio       :      0.00s CPU      0.02s WALL (     260 calls)
+
+     Parallel routines
+     fft_scatter  :     14.44s CPU      9.35s WALL (  114777 calls)
+
+     PWSCF        :    100.03s CPU     55.79s WALL (       1 calls)
+
+   This run was terminated on:  10:30:53  10Nov2017            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

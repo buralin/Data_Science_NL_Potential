@@ -6,7 +6,6 @@
  /
  &system
     ibrav   =  0, 
-    A       = 4.046, 
     nat     = 2, 
     ntyp    = 1,
     ecutwfc = 70,
@@ -34,14 +33,14 @@ ATOMIC_SPECIES
 K_POINTS (automatic)
  8 8 8 0 0 0 
 
-CELL_PARAMETERS (alat)
-0.5 0.5 0.0
-0.5 0.0 0.5
-0.0 1.0 1.0
+CELL_PARAMETERS (angstrom)
+4.046 0.00000 0.0000
+0.000 4.046 0.0000
+0.000 0.000 4.046
 
-ATOMIC_POSITIONS (crystal)
+ATOMIC_POSITIONS (angstrom)
 Al 0.0 0.0 0.0
-Al 0.0 0.0 0.5
+Al 0.0 0.0 2.023
 
 
 
