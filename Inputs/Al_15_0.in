@@ -14,7 +14,8 @@
     smearing = 'gaussian'
     degauss = 0.01
     fde_print_density = .true.
- /
+    fde_print_allpot = .true. 
+/
  &electrons
     diagonalization='david'
     mixing_mode = 'plain'
