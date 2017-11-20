@@ -1,0 +1,43 @@
+ &control
+    calculation = 'scf'
+    restart_mode='from_scratch',
+    prefix='Al_48_0'
+    pseudo_dir = './'
+ /
+ &system
+    ibrav   =  0, 
+    A       = 4.046, 
+    nat     = 2, 
+    ntyp    = 1,
+    ecutwfc = 70,
+    ecutrho = 400
+    occupations='smearing'
+    smearing = 'gaussian'
+    degauss = 0.01
+    fde_print_density = .true.
+ /
+ &electrons
+    diagonalization='david'
+    mixing_mode = 'plain'
+    mixing_beta = 0.7
+    conv_thr =  1.0d-9
+    electron_maxstep = 100
+ /
+
+ATOMIC_SPECIES
+ Al   26.00   Al.pbe-rrkj.UPF
+
+K_POINTS (automatic)
+ 8 8 8 0 0 0 
+
+CELL_PARAMETERS (angstrom)
+   1.88673786369703       0.000000000000000E+000  0.000000000000000E+000
+  3.204905121424269E-007   4.24502554451551       0.000000000000000E+000
+  1.508214287983581E-007  1.508214174116574E-007   1.99769039535507     
+
+ATOMIC_POSITIONS (alat)
+Al  0.000000000000000E+000  0.500000000000000       0.685384304848343     
+Al  0.500000000000000       0.000000000000000E+000  0.185384304848343     
+
+
+
