@@ -1,0 +1,43 @@
+ &control
+    calculation = 'scf'
+    restart_mode='from_scratch',
+    prefix='Al_8_0'
+    pseudo_dir = './'
+ /
+ &system
+    ibrav   =  0, 
+    nat     = 2, 
+    ntyp    = 1,
+    ecutwfc = 70,
+    ecutrho = 400
+    occupations='smearing'
+    smearing = 'gaussian'
+    degauss = 0.01
+    fde_print_density = .true.
+    fde_print_allpot = .true. 
+/
+ &electrons
+    diagonalization='david'
+    mixing_mode = 'plain'
+    mixing_beta = 0.7
+    conv_thr =  1.0d-9
+    electron_maxstep = 100
+ /
+
+ATOMIC_SPECIES
+ Al   26.00   Al_local.UPF
+
+K_POINTS (automatic)
+ 8 8 8 0 0 0 
+
+CELL_PARAMETERS (angstrom)
+   3.87413012241383       0.000000000000000E+000  0.000000000000000E+000
+  2.924886868214399E-007   3.87413012241382       0.000000000000000E+000
+  8.048343624975664E-008  8.048343017342648E-008   1.06603543582834     
+
+ATOMIC_POSITIONS (alat)
+Al  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+Al  0.500000000000000       0.500000000000000       0.500000000000000     
+
+
+

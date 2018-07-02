@@ -25,3 +25,6 @@ This will have an immense impact in the field of chemistry and material science 
 ### Section for interesting matrial concerning theory:
 
 https://www.youtube.com/watch?v=HC0J_SPm9co (Introduction to Scikit Learn)
+
+### Paper:
+Review: https://arxiv.org/pdf/1510.07512.pdf
